@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Prompt for the domain name
+read -p "Enter the domain: " domain
+
+# Run amass scan and save results to a file
+amass enum -d "$domain" -o output.txt
+
